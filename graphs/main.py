@@ -1,4 +1,4 @@
-from graph import *
+from graph import buildExampleGraph
 from bfs import bfs
 from dfs import dfs
 
