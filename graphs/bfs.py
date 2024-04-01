@@ -1,7 +1,7 @@
 
-from graph import Node
+import graph
 
-def bfs(head: Node, soughtValue: int):
+def bfs(head: graph.Node, soughtValue: int):
     """BFS the graph"""
     print("Breadth-first searching the graph for {}".format(soughtValue))
     queue = [head]
@@ -22,3 +22,7 @@ def bfs(head: Node, soughtValue: int):
             break
     print("Did not find the value in the given graph.")
     return None
+
+if __name__ == '__main__':
+    root = graph.buildExampleGraph()
+    bfs(root,10)
